@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slyle.css">
+    <link rel="stylesheet" href="css/style_second.css">
+
+    <title>Modal Window!</title>
+  </head>
+  <body>
+    <h1>Modal Window!</h1>
+
+
+    <div class="text">
+            <p class="text_parag">Модальные окна, оверлеи, диалоговые окна, как бы вы их не называли, настало время поговорить об этих UI паттернах. Когда они только появились на сцене, модальные окна были элегантным решением проблем интерфейса. </p>
+            <img src="/img/daily-ui-016-pop-up-overlay.jpg" alt="modal" class="modal_img">
+            <p class="text_parag">Во-первых, они упрощали интерфейс, во-вторых, экономили экранное пространство. С тех пор, дизайнеры с готовностью приняли их на вооружение, а некоторые, стали использовать их в темных шаблонах. Модальные окна превратились в современную версию всплывающих окон. Они надоедают пользователям — те, даже, научились инстинктивно и автоматически их закрывать.</p>
+            <p class="text_parag"><i>Заметка: не используйте модальные окна для отображения сообщений об ошибке, успехе операции, или предупреждения.</i></p>
+        </div>
+
+    <button class="modalShow" data-modal="#singIn">Определение</button>
+
+    <div class="modalWrap hide">
+        <div class="modal hide" id="singIn">
+                <button class="modalClose round-close" data-modal="#singIn">
+                        x
+                    </button>
+                    <p class="text_modal">
+                В графическом интерфейсе пользователя модальным называется окно, которое блокирует работу пользователя с родительским приложением до тех пор, пока пользователь это окно не закроет. Модальными преимущественно реализованы диалоговые окна. Также модальные окна часто используются для привлечения внимания пользователя к важному событию или критической ситуации. — wikipedia.
+            </p>
+            <button class="modalClose close" data-modal="#singIn">
+                Close
+            </button>
+
+        </div>
+    </div>
+
+    <div class="link">
+        <a href="https://qps.ru/kPoab" target="_blank" class="linking">medium.com</a>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
